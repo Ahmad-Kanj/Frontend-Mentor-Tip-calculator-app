@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Frontend-Mentor-Tip-calculator-app/static/css/main.d479d677.chunk.css",
-    "main.js": "/Frontend-Mentor-Tip-calculator-app/static/js/main.2d6a58e5.chunk.js",
-    "main.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/main.2d6a58e5.chunk.js.map",
+    "main.js": "/Frontend-Mentor-Tip-calculator-app/static/js/main.145459ba.chunk.js",
+    "main.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/main.145459ba.chunk.js.map",
     "runtime-main.js": "/Frontend-Mentor-Tip-calculator-app/static/js/runtime-main.1beec32d.js",
     "runtime-main.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/runtime-main.1beec32d.js.map",
     "static/js/2.310c811c.chunk.js": "/Frontend-Mentor-Tip-calculator-app/static/js/2.310c811c.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1beec32d.js",
     "static/js/2.310c811c.chunk.js",
     "static/css/main.d479d677.chunk.css",
-    "static/js/main.2d6a58e5.chunk.js"
+    "static/js/main.145459ba.chunk.js"
   ]
 }
