@@ -128,6 +128,7 @@ function App() {
             </div>
 
             <input
+              aria-label="Number of people"
               style={parseInt(people) === 0 ? { border: "2px solid red" } : {}}
               className={`numPeople`}
               type="text"
