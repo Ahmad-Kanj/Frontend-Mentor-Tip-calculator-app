@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Frontend-Mentor-Tip-calculator-app/static/css/main.d479d677.chunk.css",
+    "main.js": "/Frontend-Mentor-Tip-calculator-app/static/js/main.2d6a58e5.chunk.js",
+    "main.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/main.2d6a58e5.chunk.js.map",
+    "runtime-main.js": "/Frontend-Mentor-Tip-calculator-app/static/js/runtime-main.1beec32d.js",
+    "runtime-main.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/runtime-main.1beec32d.js.map",
+    "static/js/2.310c811c.chunk.js": "/Frontend-Mentor-Tip-calculator-app/static/js/2.310c811c.chunk.js",
+    "static/js/2.310c811c.chunk.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/2.310c811c.chunk.js.map",
+    "static/js/3.939111e2.chunk.js": "/Frontend-Mentor-Tip-calculator-app/static/js/3.939111e2.chunk.js",
+    "static/js/3.939111e2.chunk.js.map": "/Frontend-Mentor-Tip-calculator-app/static/js/3.939111e2.chunk.js.map",
+    "index.html": "/Frontend-Mentor-Tip-calculator-app/index.html",
+    "static/css/main.d479d677.chunk.css.map": "/Frontend-Mentor-Tip-calculator-app/static/css/main.d479d677.chunk.css.map",
+    "static/js/2.310c811c.chunk.js.LICENSE.txt": "/Frontend-Mentor-Tip-calculator-app/static/js/2.310c811c.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Frontend-Mentor-Tip-calculator-app/static/media/icon-person.65bfd204.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1beec32d.js",
+    "static/js/2.310c811c.chunk.js",
+    "static/css/main.d479d677.chunk.css",
+    "static/js/main.2d6a58e5.chunk.js"
+  ]
+}
