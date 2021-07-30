@@ -1,38 +1,307 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+  width: 100%;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #0f695c;
+  margin-bottom: 50px;
+}
+
+.container {
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  width: 920px;
+  height: 480px;
+  justify-content: space-evenly;
+  background-color: white;
+}
+.interface {
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 415px;
+  height: 415px;
+}
+
+.billInput {
+  font-family: "Space Mono", monospace;
+  color: #00474b;
+  text-align: right;
+  background: url(./images/icon-dollar.svg) no-repeat;
+  background-position: 5%;
+  width: 380px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f8fb;
+  padding-right: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.tip {
+  margin-top: 45px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 400px;
+  height: 120px;
+}
+.btn {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Space Mono", monospace;
+  border: none;
+  color: white;
+  background-color: #00474b;
+  width: 120px;
+  height: 50px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.selected {
+  background-color: #21c3ab;
+  color: #00474b;
+}
+
+.tipPercent {
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  background-color: #f3f8fb;
+  border: none;
+  width: 120px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 6px;
+  padding-right: 10px;
+  font-weight: 700;
+}
+
+.people {
+  margin-top: 40px;
+}
+
+.peopleText {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  display: none;
+  font-size: 16px;
+  color: #dd5b44;
+  font-weight: 700;
+}
+
+.numPeople {
+  background: url(./images/icon-person.svg) no-repeat;
+  background-position: 5%;
+  font-family: "Space Mono", monospace;
+  width: 380px;
+  height: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f8fb;
+  cursor: pointer;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 35px 30px 35px;
+  background-color: #00474b;
+  border-radius: 25px;
+  width: 415px;
+  height: 415px;
+}
+
+.tipAmount,
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.tipAmount {
+  margin-bottom: 20px;
+}
+
+.tipAmountVal,
+.totalVal {
+  color: #21c3ab;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.textContainer {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.perPerson {
+  font-weight: normal;
+  color: hsl(186, 28%, 71%);
+  font-size: 13px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.reset {
+  font-family: "Space Mono", monospace;
+  align-self: center;
+  width: 330px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #21c3ab;
+  color: #00474b;
+  font-size: 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .reset:hover {
+    cursor: pointer;
+    background-color: #9fe8df;
   }
-  to {
-    transform: rotate(360deg);
+  .btn:hover {
+    cursor: pointer;
+    background-color: #7bc5bc;
+  }
+}
+
+.reset:active {
+  transform: scale(1.05);
+}
+
+.redBorder {
+  border: 2px solid #cf3d23;
+}
+
+.billInput:focus,
+.tipPercent:focus,
+.numPeople:focus {
+  outline: none;
+  border: 2px solid #21c3ab;
+}
+
+.tipPercent:focus::placeholder {
+  color: transparent;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 375px;
+    height: 780px;
+  }
+
+  .interface {
+    padding: 10px;
+    margin: 0;
+    width: 330px;
+    height: 460px;
+  }
+
+  .bill {
+    margin-top: 10px;
+  }
+
+  .billInput,
+  .numPeople {
+    margin: 0;
+    width: 310px;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .people {
+    margin-top: 15px;
+  }
+
+  .peopleText {
+    margin: 0;
+    width: 310px;
+  }
+
+  .buttons {
+    margin: 0;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 315px;
+    height: 190px;
+  }
+
+  .buttons .btn {
+    margin: 0;
+    width: 150px;
+    height: 50px;
+  }
+
+  .tip {
+    margin-top: 30px;
+  }
+
+  .tipPercent {
+    width: 150px;
+    height: 50px;
+  }
+
+  .display {
+    padding: 35px 20px 20px;
+    margin: 0;
+    margin-top: 10px;
+    width: 330px;
+    height: 260px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .totalVal,
+  .tipAmountVal {
+    margin: 0;
+    font-size: 32px;
+  }
+
+  .reset {
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
   }
 }
